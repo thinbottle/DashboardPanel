@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Create Backup" %}{% endblock %}
+
+{% block page_header %}
+  {% include "horizon/common/_page_header.html" with title=_("Create Backup") %}
+{% endblock page_header %}
+
+{% block main %}
+    {% include "syspanel/xindbs/_create.html" %}
+{% endblock %}
